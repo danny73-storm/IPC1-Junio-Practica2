@@ -7,9 +7,16 @@ public class proyecto2IPC{
     
     
     public static void main(String[] args) {
-       Scanner sn = new Scanner(System.in);
+
+    	proyecto2IPC alpha = new proyecto2IPC();
+       
+    } 
+
+    public proyecto2IPC(){
+
+       Scanner leer = new Scanner(System.in);
        boolean salir = false;
-       int opcion; //Guardaremos la opcion del usuario
+       int opcion; //Guardaremos la opcion del cliente
        while(!salir){
            System.out.println("\n******************************");
            System.out.println("*******  Bienvenidos a  ******");
@@ -28,39 +35,46 @@ public class proyecto2IPC{
            System.out.println("8. Reportes");
            System.out.println("9. Salir");
           
-           
-           opcion = sn.nextInt();
+           opcion = leer.nextInt();
            switch(opcion){
                case 1:
-                   System.out.println("Has seleccionado la opcion 1");
+                   System.out.println("\nQue pelicula deseas prestar?");
+                   System.out.println("----------------------------\n");
                    break;
                case 2:
-                   System.out.println("Has seleccionado la opcion 2");
+                   System.out.println("\nQue pelicula deseas devolver?");
+                   System.out.println("-----------------------------\n");
                    break;
                 case 3:
-                   System.out.println("Has seleccionado la opcion 3");
+                   System.out.println("\nCatalogo de pelis!");
+                   System.out.println("------------------\n");
                    break;
                 case 4:
-                   System.out.println("Has seleccionado la opcion 4");
+                   System.out.println("\nIngresar nueva peli");
+                   System.out.println("-------------------\n");
                    break;
                 case 5:
-                   System.out.println("Has seleccionado la opcion 5");
+                   System.out.println("\nOrden ascendenete respecto al nombre");
+                   System.out.println("------------------------------------\n");
                    break;
                 case 6:
-                   System.out.println("Has seleccionado la opcion 6");
+                   System.out.println("\nIngreso de cliente");
+                   System.out.println("------------------\n");
                    break;
                 case 7:
-                   System.out.println("Has seleccionado la opcion 7");
+                   System.out.println("\nMostrar clientes");
+                   System.out.println("----------------\n");
                    break;
                 case 8:
-                   System.out.println("Has seleccionado la opcion 8");
+                   System.out.println("\nReportes");
+                   System.out.println("--------\n");
                    break;
                 case 9:
                    salir=true;
                    break;
                 default:
                    System.out.println("Las opciones son entre 1 y 9 ");
-           }
-       } 
-    }   
+            }
+        }   
+    }  
 }
