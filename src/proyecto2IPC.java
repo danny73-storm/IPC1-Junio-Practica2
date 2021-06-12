@@ -3,7 +3,7 @@ package src;
 import java.util.Scanner;
 
 
-public class ProyectoVacasIPC {
+public class proyecto2IPC{
     
     
     public static void main(String[] args) {
